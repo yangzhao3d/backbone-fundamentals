@@ -1,13 +1,17 @@
 
 ## Prelude
+## 序章
 
 ![](img/logo.jpg)
 
 Not so long ago, "data-rich web application" was an oxymoron. Today, these applications are everywhere and you need to know how to build them.
+不久之前，“富数据 Web 应用”还是个自相矛盾的说法。如今，这些应用却已随处可见，而且你还得学会去构造它们。
 
 Traditionally, web applications left the heavy-lifting of data to servers that pushed HTML to the browser in complete page loads. The use of client-side JavaScript was limited to improving the user experience. Now this relationship has been inverted - client applications pull raw data from the server and render it into the browser when and where it is needed.
+传统 Web 应用将大量数据 加工(lifting?) 工作给服务器处理，那是完整页面加载 HTML 传送给浏览器。客户端 JavaScript 的应用对于提高用户体验作用有限。如今这个关系反了过来——客户端应用将原始数据从服务器原样获取，然后按需渲染到浏览器中。
 
 Think of the Ajax shopping cart which doesn't require a refresh on the page when adding an item to your basket. Initially, jQuery became the go-to library for this paradigm. Its nature was to make Ajax requests then update text on the page and so on. However, this pattern with jQuery revealed that we have implicit model data on the client side. With the server no longer being the only place that knows about our item count, it was a hint that there was a natural tension and pull of this evolution. 
+试想 Ajax 购物车，当你将一件商品加入时不需要刷新页面。最初，jQuery 成为这类问题的必须(go-to?)库(必由之路?)。它的本质方式(nature)就是发起 Ajax 请求，然后更新页面上的文字，等等。但是，这种通过 jQuery 的模式表明我们在客户端隐含了模型数据，服务端不再是唯一了解我们商品数量的地方了。这暗示有一股自然力量正紧迫地推动这场革命。
 
 The rise of arbitrary code on the client-side which can talk to the server however it sees fit has meant an increase in client-side complexity. Good architecture on the client has gone from an afterthought to essential - you can't just hack together some jQuery code and expect it to scale as your application grows. Most likely, you would end up with a nightmarish tangle of UI callbacks entwined with business logic, destined to be discarded by the poor soul who inherits your code.
 
