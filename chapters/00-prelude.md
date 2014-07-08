@@ -4,11 +4,11 @@
 
 Not so long ago, "data-rich web application" was an oxymoron. Today, these applications are everywhere and you need to know how to build them.
 
-zh: 不久之前，“富数据 Web 应用”还是个自相矛盾的说法。如今，这些应用却已随处可见，而你还得学会去构造它们。
+zh: 不久之前，“富数据 Web 应用”还是自相矛盾的说法。如今，这些应用却已随处可见，而你还得学会去构造它们。
 
 Traditionally, web applications left the heavy-lifting of data to servers that pushed HTML to the browser in complete page loads. The use of client-side JavaScript was limited to improving the user experience. Now this relationship has been inverted - client applications pull raw data from the server and render it into the browser when and where it is needed.
 
-zh: 传统 Web 应用将大量数据加工工作交给服务器处理，服务器在页面加载过程中将完整的 HTML 传送给浏览器。客户端 JavaScript 对于提高用户体验作用十分有限。如今这个关系反了过来——客户端应用将原始数据从服务器原样获取，然后按需渲染到浏览器中。
+zh: 传统 Web 应用将大量数据加工工作交由服务器处理，服务器在页面加载过程中将完整的 HTML 传送给浏览器。客户端 JavaScript 对于提高用户体验作用十分有限。如今这个关系反了过来——客户端应用将原始数据从服务器原样获取，然后按需渲染至浏览器中。
 
 Think of the Ajax shopping cart which doesn't require a refresh on the page when adding an item to your basket. Initially, jQuery became the go-to library for this paradigm. Its nature was to make Ajax requests then update text on the page and so on. However, this pattern with jQuery revealed that we have implicit model data on the client side. With the server no longer being the only place that knows about our item count, it was a hint that there was a natural tension and pull of this evolution. 
 
@@ -16,7 +16,7 @@ zh: 试想 Ajax 购物车功能，当你将一件商品加入时不需要刷新�
 
 The rise of arbitrary code on the client-side which can talk to the server however it sees fit has meant an increase in client-side complexity. Good architecture on the client has gone from an afterthought to essential - you can't just hack together some jQuery code and expect it to scale as your application grows. Most likely, you would end up with a nightmarish tangle of UI callbacks entwined with business logic, destined to be discarded by the poor soul who inherits your code.
 
-zh: 虽然在客户端随意写代码也可以跟服务端交流，但是这意味着客户端复杂度越来越高。以事后诸葛亮的目光去看基础代码，客户端架构的发光之处将消失殆尽——你不能指望东拼西凑的 jQuery 代码能良好地随着你的应用规模一块儿扩展。最可能的结果是，你将遭受 UI 回调与业务逻辑缠绕在一起的可怕混乱，然后注定将被接替你续写代码的倒霉蛋忽略。
+zh: 虽然在客户端随意写代码也可以跟服务端交流，但是这意味着客户端复杂度越来越高。以事后诸葛亮的目光去看基础代码，客户端架构的发光之处将消失殆尽——你不能指望东拼西凑的 jQuery 代码能良好地随着你的应用规模一块儿扩展。最可能的结果是，你将遭受 UI 回调与业务逻辑缠绕在一起的可怕混乱，然后又注定将被接管你代码的倒霉蛋忽略。
 
 Thankfully, there are a growing number of JavaScript libraries that can help improve the structure and maintainability of your code, making it easier to build ambitious interfaces without a great deal of effort. [Backbone.js](http://documentcloud.github.com/backbone/) has quickly become one of the most popular open-source solutions to these issues and in this book we will take you through an in-depth walkthrough of it.
 
@@ -32,7 +32,7 @@ zh: 我看重提高开发人员的知识水平，因此我将此书以“署名-
 
 My extended thanks go out to [Jeremy Ashkenas](https://github.com/jashkenas) and [DocumentCloud](http://www.documentcloud.org) for creating Backbone.js and [these](https://github.com/addyosmani/backbone-fundamentals/contributors) members of the community for their assistance making this project far better than I could have imagined.
 
-zh: 我还要感谢创造 Backbone.js 的 [Jeremy Ashkenas](https://github.com/jashkenas) 和 [DocumentCloud](http://www.documentcloud.org)。还有[社群的这些成员](https://github.com/addyosmani/backbone-fundamentals/contributors)，在他们的协助下，这个项目的好到远远超出我的想象。
+zh: 我还要感谢创造 Backbone.js 的 [Jeremy Ashkenas](https://github.com/jashkenas) 和 [DocumentCloud](http://www.documentcloud.org)。还有[社群的这些成员](https://github.com/addyosmani/backbone-fundamentals/contributors)，在他们的协助下，这个项目好到远远超出我的想象。
 
 ## Target Audience |zh: 目标读者
 
@@ -63,9 +63,9 @@ zh: 我还要感谢我亲爱的家人，在我写作本书时，他们给了我�
 
 None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to: 
 
-zh: 若没有社群里其他参与的开发人员和作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
+zh: 若没有社群里其他参与开发的人员和写作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
 
-* Derick and Marc (once again) （再一次）
+* Derick and Marc (once again) |zh: Derick 和 Marc（再一次感谢）
 * [Ryan Eastridge](https://github.com/eastridge)
 * [Jack Franklin](https://github.com/jackfranklin)
 * [David Amend](https://github.com/raDiesle)
@@ -76,9 +76,9 @@ zh: 若没有社群里其他参与的开发人员和作者投入的时间和努�
 
 as well as our other excellent [contributors](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors) that made this project possible.
 
-zh: 还有使这个项目成为可能的杰出的[贡献者们](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors)。
+zh: 还有使这个项目得以完成的杰出的[贡献者们](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors)。
 
-## Target Version |zh: 适合版本
+## Target Version |zh: 对应版本
 
 Developing Backbone.js Applications targets Backbone.js 1.1.x (and Underscore 1.6.x) and will actively attempt to stay up to date with more recent versions of these libraries. Where possible, if you find using a newer version of Backbone breaks an example, please consult the official guide to [upgrading](http://backbonejs.org/#upgrading) as it contains instructions for how to work around breaking changes. StackOverflow also contains many excellent examples of how other users are handling updating their code.
 
