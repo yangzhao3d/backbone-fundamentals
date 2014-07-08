@@ -41,7 +41,7 @@ zh: 你可以使用“make”或“make -f Makefile”构建这本书。这会�
 
 Note: At this time, generating all of the above formats should be straight-forward with the exception of the PDF. We have an open [pull-request](https://github.com/addyosmani/backbone-fundamentals/pull/369) for `xelatex` which is being considered and better guides for working around cross-platform PDF issues will be supplied as time allows.
 
-zh: 注意：目前，除了 PDF 之外，输出其他格式都十分直接。我们有个关于“xelatex”的开放 [pull-request](https://github.com/addyosmani/backbone-fundamentals/pull/369) 正在被我们考量，那是个十分好的指南。随着时间推移，关于跨平台 PDF 问题都会提供到上面的。
+zh: 注意：目前，除了 PDF 之外，输出其他格式都十分直接。我们有个关于`xelatex`的开放 [pull-request](https://github.com/addyosmani/backbone-fundamentals/pull/369) 正在被我们考量，那是个十分好的指南。随着时间推移，关于跨平台 PDF 问题都会提供到上面的。
 
 ### Dependencies |zh: 依赖库
 
