@@ -190,7 +190,7 @@ Having been refined over two and a half years of development, Backbone is a matu
 
 The goal of this book is to create an authoritative and centralized repository of information that can help those developing real-world apps with Backbone. If you come across a section or topic which you think could be improved or expanded on, please feel free to submit an issue (or better yet, a pull-request) on the book's [GitHub site](https://github.com/addyosmani/backbone-fundamentals). It won't take long and you'll be helping other developers avoid the problems you ran into.
 
-zh: 这本书的写作目标是提供一个权威的信息汇集之处，切实帮助那些实际使用 Backbone 开发应用的人。如果你发觉某个章节或主题可以改进或扩展，欢迎在本书的[GitHub 站点](https://github.com/addyosmani/backbone-fundamentals)发布问题（issue）。相信用不了多久你就会帮到其他开发者，避免让他们陷入你曾经遇到的问题。
+zh: 这本书的写作目标是提供一个权威的信息汇集之处，切实帮助那些实际使用 Backbone 开发应用的人。如果你发觉某个章节或主题可以改进或扩展，欢迎在本书的 [GitHub 站点](https://github.com/addyosmani/backbone-fundamentals)发布问题（issue）。相信用不了多久你就会帮到其他开发者，避免让他们陷入你曾经遇到的问题。
 
 Topics will include MVC theory and how to build applications using Backbone's Models, Views, Collections, and Routers. I'll also be taking you through advanced topics like modular development with Backbone.js and AMD (via RequireJS), solutions to common problems like nested views, how to solve routing problems with Backbone and jQuery Mobile, and much more.
 
