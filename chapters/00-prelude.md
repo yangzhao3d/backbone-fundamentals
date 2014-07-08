@@ -1,5 +1,4 @@
-## Prelude
-## 序章
+## Prelude |zh: 序章
 
 ![](img/logo.jpg)
 
@@ -35,15 +34,13 @@ My extended thanks go out to [Jeremy Ashkenas](https://github.com/jashkenas) and
 
 zh: 我还要感谢创造 Backbone.js 的 [Jeremy Ashkenas](https://github.com/jashkenas) 和 [DocumentCloud](http://www.documentcloud.org)。还有[社群的这些成员](https://github.com/addyosmani/backbone-fundamentals/contributors)，在他们的协助下，这个项目的好到远远超出我的想象。
 
-## Target Audience
-## 目标读者
+## Target Audience |zh: 目标读者
 
 This book is targeted at novice to intermediate developers wishing to learn how to better structure their client-side code. An understanding of JavaScript fundamentals is required to get the most out of it, however we have tried to provide a basic description of these concepts where possible.
 
 zh: 这本书适合想要学习将客户端代码结构做得更好的菜鸟到中级开发人员。想要收获最大的话，了解 JavaScript 的基础是必须的。当然我们也尽力提供这些概念的基础知识。
 
-## Acknowledgements
-## 致谢
+## Acknowledgements |zh: 致谢
 
 I am indebted to the fantastic work done by the technical reviewers who helped review and improve this book. Their knowledge, energy, and passion have helped shape it into a better learning resource and they continue to serve as a source of inspiration. Thanks go out to:
 
@@ -61,8 +58,7 @@ zh: 技术审稿们帮着我审阅和改进这本书，他们做得十分出色�
 I would also like to thank my loving family for their patience and support while I worked on this book, as well as my brilliant editor Mary Treseler.
 zh: 我还要感谢我亲爱的家人，在我写作本书时，他们给了我莫大的耐心与支持。还有才华横溢的编辑 Mary Treseler。
 
-## Credits
-## 工作人员
+## Credits |zh: 工作人员
 
 None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to: 
 zh: 若没有社群里其他参与的开发人员和作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
@@ -79,15 +75,13 @@ zh: 若没有社群里其他参与的开发人员和作者投入的时间和努�
 as well as our other excellent [contributors](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors) that made this project possible.
 zh: 还有使这个项目成为可能的杰出的[贡献者们](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors)。
 
-## Target Version
-## 适合版本
+## Target Version |zh: 适合版本
 
 Developing Backbone.js Applications targets Backbone.js 1.1.x (and Underscore 1.6.x) and will actively attempt to stay up to date with more recent versions of these libraries. Where possible, if you find using a newer version of Backbone breaks an example, please consult the official guide to [upgrading](http://backbonejs.org/#upgrading) as it contains instructions for how to work around breaking changes. StackOverflow also contains many excellent examples of how other users are handling updating their code.
 
 zh: 本书适合开发 Backbone.js 应用对应 Backbone.js 版本为 1.1.x （同时 Underscore 版本为 1.6.x），同时我们会积极努力地保持与这些库的更新版本同步。如果你使用更新版本的 Backbone，无法运行某个例子时，请参阅[官方更新指南](http://backbonejs.org/#upgrading)，那里面有关于如何处理重大更改的指示。StackOverflow 上也有许多其他用户处理代码更新的出色例子。
 
-## Reading
-## 推荐阅读
+## Reading |zh: 推荐阅读
 
 I assume your level of knowledge about JavaScript goes beyond the basics and as such certain topics such as object literals are skipped. If you need to learn more about the language, I am happy to suggest:
 
