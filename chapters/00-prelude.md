@@ -56,11 +56,13 @@ zh: 技术审稿们帮着我审阅和改进这本书，他们做得十分出色�
 * [Sindre Sorhus](https://github.com/sindresorhus)
 
 I would also like to thank my loving family for their patience and support while I worked on this book, as well as my brilliant editor Mary Treseler.
+
 zh: 我还要感谢我亲爱的家人，在我写作本书时，他们给了我莫大的耐心与支持。还有才华横溢的编辑 Mary Treseler。
 
 ## Credits |zh: 工作人员
 
 None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to: 
+
 zh: 若没有社群里其他参与的开发人员和作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
 
 * Derick and Marc (once again) （再一次）
@@ -73,6 +75,7 @@ zh: 若没有社群里其他参与的开发人员和作者投入的时间和努�
 * [Björn Ekengren](https://github.com/Ekengren)
 
 as well as our other excellent [contributors](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors) that made this project possible.
+
 zh: 还有使这个项目成为可能的杰出的[贡献者们](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors)。
 
 ## Target Version |zh: 适合版本
