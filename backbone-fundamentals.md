@@ -5,11 +5,11 @@
 
 Not so long ago, "data-rich web application" was an oxymoron. Today, these applications are everywhere and you need to know how to build them.
 
-zh: 不久之前，“富数据 Web 应用”还是个自相矛盾的说法。如今，这些应用却已随处可见，而你还得学会去构造它们。
+zh: 不久之前，“富数据 Web 应用”还是自相矛盾的说法。如今，这些应用却已随处可见，而你还得学会去构造它们。
 
 Traditionally, web applications left the heavy-lifting of data to servers that pushed HTML to the browser in complete page loads. The use of client-side JavaScript was limited to improving the user experience. Now this relationship has been inverted - client applications pull raw data from the server and render it into the browser when and where it is needed.
 
-zh: 传统 Web 应用将大量数据加工工作交给服务器处理，服务器在页面加载过程中将完整的 HTML 传送给浏览器。客户端 JavaScript 对于提高用户体验作用十分有限。如今这个关系反了过来——客户端应用将原始数据从服务器原样获取，然后按需渲染到浏览器中。
+zh: 传统 Web 应用将大量数据加工工作交由服务器处理，服务器在页面加载过程中将完整的 HTML 传送给浏览器。客户端 JavaScript 对于提高用户体验作用十分有限。如今这个关系反了过来——客户端应用将原始数据从服务器原样获取，然后按需渲染至浏览器中。
 
 Think of the Ajax shopping cart which doesn't require a refresh on the page when adding an item to your basket. Initially, jQuery became the go-to library for this paradigm. Its nature was to make Ajax requests then update text on the page and so on. However, this pattern with jQuery revealed that we have implicit model data on the client side. With the server no longer being the only place that knows about our item count, it was a hint that there was a natural tension and pull of this evolution. 
 
@@ -17,7 +17,7 @@ zh: 试想 Ajax 购物车功能，当你将一件商品加入时不需要刷新�
 
 The rise of arbitrary code on the client-side which can talk to the server however it sees fit has meant an increase in client-side complexity. Good architecture on the client has gone from an afterthought to essential - you can't just hack together some jQuery code and expect it to scale as your application grows. Most likely, you would end up with a nightmarish tangle of UI callbacks entwined with business logic, destined to be discarded by the poor soul who inherits your code.
 
-zh: 虽然在客户端随意写代码也可以跟服务端交流，但是这意味着客户端复杂度越来越高。以事后诸葛亮的目光去看基础代码，客户端架构的发光之处将消失殆尽——你不能指望东拼西凑的 jQuery 代码能良好地随着你的应用规模一块儿扩展。最可能的结果是，你将遭受 UI 回调与业务逻辑缠绕在一起的可怕混乱，然后注定将被接替你续写代码的倒霉蛋忽略。
+zh: 虽然在客户端随意写代码也可以跟服务端交流，但是这意味着客户端复杂度越来越高。以事后诸葛亮的目光去看基础代码，客户端架构的发光之处将消失殆尽——你不能指望东拼西凑的 jQuery 代码能良好地随着你的应用规模一块儿扩展。最可能的结果是，你将遭受 UI 回调与业务逻辑缠绕在一起的可怕混乱，然后又注定将被接管你代码的倒霉蛋忽略。
 
 Thankfully, there are a growing number of JavaScript libraries that can help improve the structure and maintainability of your code, making it easier to build ambitious interfaces without a great deal of effort. [Backbone.js](http://documentcloud.github.com/backbone/) has quickly become one of the most popular open-source solutions to these issues and in this book we will take you through an in-depth walkthrough of it.
 
@@ -33,7 +33,7 @@ zh: 我看重提高开发人员的知识水平，因此我将此书以“署名-
 
 My extended thanks go out to [Jeremy Ashkenas](https://github.com/jashkenas) and [DocumentCloud](http://www.documentcloud.org) for creating Backbone.js and [these](https://github.com/addyosmani/backbone-fundamentals/contributors) members of the community for their assistance making this project far better than I could have imagined.
 
-zh: 我还要感谢创造 Backbone.js 的 [Jeremy Ashkenas](https://github.com/jashkenas) 和 [DocumentCloud](http://www.documentcloud.org)。还有[社群的这些成员](https://github.com/addyosmani/backbone-fundamentals/contributors)，在他们的协助下，这个项目的好到远远超出我的想象。
+zh: 我还要感谢创造 Backbone.js 的 [Jeremy Ashkenas](https://github.com/jashkenas) 和 [DocumentCloud](http://www.documentcloud.org)。还有[社群的这些成员](https://github.com/addyosmani/backbone-fundamentals/contributors)，在他们的协助下，这个项目好到远远超出我的想象。
 
 ## Target Audience |zh: 目标读者
 
@@ -64,9 +64,9 @@ zh: 我还要感谢我亲爱的家人，在我写作本书时，他们给了我�
 
 None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to: 
 
-zh: 若没有社群里其他参与的开发人员和作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
+zh: 若没有社群里其他参与开发的人员和写作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
 
-* Derick and Marc (once again) （再一次）
+* Derick and Marc (once again) |zh: Derick 和 Marc（再一次感谢）
 * [Ryan Eastridge](https://github.com/eastridge)
 * [Jack Franklin](https://github.com/jackfranklin)
 * [David Amend](https://github.com/raDiesle)
@@ -77,9 +77,9 @@ zh: 若没有社群里其他参与的开发人员和作者投入的时间和努�
 
 as well as our other excellent [contributors](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors) that made this project possible.
 
-zh: 还有使这个项目成为可能的杰出的[贡献者们](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors)。
+zh: 还有使这个项目得以完成的杰出的[贡献者们](https://github.com/addyosmani/backbone-fundamentals/graphs/contributors)。
 
-## Target Version |zh: 适合版本
+## Target Version |zh: 对应版本
 
 Developing Backbone.js Applications targets Backbone.js 1.1.x (and Underscore 1.6.x) and will actively attempt to stay up to date with more recent versions of these libraries. Where possible, if you find using a newer version of Backbone breaks an example, please consult the official guide to [upgrading](http://backbonejs.org/#upgrading) as it contains instructions for how to work around breaking changes. StackOverflow also contains many excellent examples of how other users are handling updating their code.
 
@@ -98,21 +98,33 @@ zh: 我假设你的 JavaScript 水平超凡，于是像对象字面值（Object 
 * [Object-Oriented JavaScript](http://www.amazon.com/Object-Oriented-Javascript-Stoyan-Stefanov/dp/1847194141) by Stoyan Stefanov (Packt Publishing)
 
 
-# Introduction
+# Introduction |zh: 简介
 
 Frank Lloyd Wright once said “You can’t make an architect. You can however open the doors and windows toward the light as you see it.” In this book, I hope to shed some light on how to improve the structure of your web applications, opening doors to what will hopefully be more maintainable, readable applications in your future.
 
+zh: 弗兰克·劳埃德·赖特（Frank Lloyd Wright，建筑师）曾经说道：你不能成为一个建筑师，但是你可以打开门窗朝着光知道你看到。”希望这本书能为提高 Web 应用结构给你带来一些启发，为你打开创造更易维护、可读性更强应用的大门。
+
 The goal of all architecture is to build something well; in our case, to craft code that is enduring and delights both ourselves and the developers who will maintain our code long after we are gone. We all want our architecture to be simple, yet beautiful.
+
+zh: 所有架构的目标都是为了把东西做得更好。在我们这个案例中，目标就是精巧写出长期有用的代码，使我们自己和我们走后维护我们代码的人都感到愉悦。我们都希望我们的架构既简单又优雅。
 
 Modern JavaScript frameworks and libraries can bring structure and organization to your projects, establishing a maintainable foundation right from the start. They build on the trials and tribulations of developers who have had to work around callback chaos similar to that which you are facing now or may in the near future.
 
+zh: 可以用现代 JavaScript 框架和库来组织你的项目，以期从一开始就建立一个可维护的基础。这些框架和库都是开发人员历经回调混乱的磨难建立起来的，这些磨难与你当前面临或在不久将来可能将要遇到的类似。
+
 When developing applications using just jQuery, the piece missing is a way to structure and organize your code. It's very easy to create a JavaScript app that ends up a tangled mess of jQuery selectors and callbacks, all desperately trying to keep data in sync between the HTML for your UI, the logic in your JavaScript, and calls to your API for data.
+
+zh: 当仅仅用 jQuery 开发应用时，缺少的那一块正式是你赖以构建组织代码的方式。创建的 JavaScript 应用很容易最终就变成一堆杂乱无章的 jQuery 选择器和回调，因为这些东西都需要在 HTML 和你的 UI、 JavaScript中的逻辑和请求你的 API 数据获取之间同数据。
 
 Without something to help tame the mess, you're likely to string together a set of independent plugins and libraries to make up the functionality or build everything yourself from scratch and have to maintain it yourself. Backbone solves this problem for you, providing a way to cleanly organize code, separating responsibilities into recognizable pieces that are easy to maintain.
 
+zh: 如果没有些工具帮你抑制混乱的话，你很容易就串起一绺独立的彼此独立的插件和类库来实现功能，或者你自己从零开始创造你所有需要的东西，然后自己维护。Backbone 为你解决了这个问题，提供一种组织代码的清晰方式、分离职责到可识别的易于维护的片段中。
+
 In "Developing Backbone.js Applications," I and a number of other experienced authors will show you how to improve your web application structure using the popular JavaScript library, Backbone.js
 
-### What Is MVC?
+zh: 在本书中，我将和许多有经验的作者一起为你展现如何使用流行的 JavaScript 库—— Backbone.js ——提升你的 Web 应用结构。
+
+### What Is MVC? |zh: 什么是 MVC？
 
 A number of modern JavaScript frameworks provide developers an easy path to organizing their code using variations of a pattern known as MVC (Model-View-Controller). MVC separates the concerns in an application into three parts:
 
@@ -126,7 +138,7 @@ JavaScript MVC frameworks don’t always strictly follow the above pattern. Some
 
 For this reason we refer to such frameworks as following the MV* pattern; that is, you’re likely to have a Model and a View, but a distinct Controller might not be present and other components may come into play.
 
-### What is Backbone.js?
+### What is Backbone.js? |zh: Backbone.js 是什么？
 
 ![](img/backbonejsorg.jpg)
 
@@ -140,7 +152,7 @@ Backbone focuses on giving you helpful methods for querying and manipulating you
 
 As it's small, there is also less your users have to download on mobile or slower connections. The entire Backbone source can be read and understood in just a few hours.
 
-### When Do I Need A JavaScript MVC Framework?
+### When Do I Need A JavaScript MVC Framework? |zh: 我什么时候需要一个 JavaScript MVC 框架？
 
 When building a single-page application using JavaScript, whether it involves a complex user interface or is simply trying to reduce the number of HTTP requests required for new Views, you will likely find yourself inventing many of the pieces that make up an MV* framework.
 
@@ -159,7 +171,7 @@ If, however, you’re building an application that still relies on the server fo
 Maturity in software (framework) development isn't simply about how long a framework has been around. It's about how solid the framework is and more importantly how well it's evolved to fill its role. Has it become more effective at solving common problems? Does it continue to improve as developers build larger and more complex applications with it?
 
 
-### Why Consider Backbone.js?
+### Why Consider Backbone.js? |zh: 为什么要用 Backbone.js？
 
 Backbone provides a minimal set of data-structuring (Models, Collections) and user interface (Views, URLs) primitives that are helpful when building dynamic applications using JavaScript. It's not opinionated, meaning you have the freedom and flexibility to build the best experience for your web application how you see fit. You can either use the prescribed architecture it offers out of the box or extend it to meet your requirements.
 
@@ -174,47 +186,87 @@ With a vibrant community of plugin and extension authors, there's a likelihood t
 Having been refined over two and a half years of development, Backbone is a mature library that will continue to offer a minimalist solution for building better web applications. I regularly use it and hope that you find it as useful an addition to your toolbelt as I have.
 
 
-### Setting Expectations
+### Setting Expectations |zh: 设定期许
 
 The goal of this book is to create an authoritative and centralized repository of information that can help those developing real-world apps with Backbone. If you come across a section or topic which you think could be improved or expanded on, please feel free to submit an issue (or better yet, a pull-request) on the book's [GitHub site](https://github.com/addyosmani/backbone-fundamentals). It won't take long and you'll be helping other developers avoid the problems you ran into.
 
+zh: 这本书的写作目标是提供一个权威的信息汇集之处，切实帮助那些实际使用 Backbone 开发应用的人。如果你发觉某个章节或主题可以改进或扩展，欢迎在本书的[GitHub 站点](https://github.com/addyosmani/backbone-fundamentals)发布问题（issue）。相信用不了多久你就会帮到其他开发者，避免让他们陷入你曾经遇到的问题。
+
 Topics will include MVC theory and how to build applications using Backbone's Models, Views, Collections, and Routers. I'll also be taking you through advanced topics like modular development with Backbone.js and AMD (via RequireJS), solutions to common problems like nested views, how to solve routing problems with Backbone and jQuery Mobile, and much more.
+
+zh: 本书主题包括 MVC 理论，以及如何通过使用 Backbone 的模型、视图、集合和路由构建应用。我还会引你进入一些诸如通过 Backbone.js 和 AMD（通过 RequireJS）进行模块化开发、像嵌套视图之类常见问题的解决方法、如何解决 Backbone 和 jQuery Mobile 之间的路由问题等等之类的高级主题。
 
 Here is a peek at what you will be learning in each chapter:
 
+zh: 下面带你瞥一眼每一章你会学到东西的：
+
 <i>Chapter 2, Fundamentals</i> traces the history of the MVC design pattern and introduces how it is implemented by Backbone.js and other JavaScript frameworks.
+
+zh: <i>第二章  背景知识</i>：追溯 MVC 设计模式的历史并介绍 Backbone.js 和其他 JavaScript 框架是如何实现这种模式的。
 
 <i>Chapter 3, Backbone Basics</i> covers the major features of the Backbone.js core and the technologies and techniques you will need to know in order to apply it.
 
+zh: <i>第三章  Backbone 基础</i>：涉及 Backbone.js 核心的主要特性，以及为了应用它你需要知道的技术和技巧。
+
 <i>Chapter 4, Exercise 1: Todos - Your First Backbone.js App</i> takes you step-by-step through development of a simple client-side Todo List application.
 
-<i>Chapter 5, Exercise 2: Book Library - Your First RESTful Backbone.js App</i> walks you through development of a Book Library application which persists its model to a server using a REST API.
+zh: <i>第四章  练习一：你的第一个 Backbone.js 应用——待办事项列表</i>：一步步带你开发一个简单的客户端应用——待办事项列表应用。
+
+<i>Chapter 5, Exercise 2: Book Library - Your First RESTful（符合 REST 原则） Backbone.js App</i> walks you through development of a Book Library application which persists its model to a server using a REST（表现层状态转换） API.
+
+zh: <i>第五章  练习二：你的第一个 RESTful Backbone.js 应用——图书馆</i>：带你走进开发一个图书馆应用的全过程，通过一个 REST API 保持它的模型。
 
 <i>Chapter 6, Backbone Extensions</i> describes Backbone.Marionette and Thorax, two extension frameworks which add features to Backbone.js that are useful for developing large-scale applications.
 
+zh: <i>第六章  Backbone 扩展</i>：讲解了 Backbone.Marionette 和 Thorax 两个框架，它们为 Backbone.js 添加了功能，对开发大型应用十分有用。
+
 <i>Chapter 7, Common Problems and Solutions</i> reviews common issues you may encounter when using Backbone.js and ways of addressing them.
+
+zh: <i>第七章  常见问题和解决方案</i>：回顾了你使用 Backbone.js 时可能遇到的常见问题，并给出解决办法。
 
 <i>Chapter 8, Modular Development</i> looks at how AMD modules and RequireJS can be used to modularize your code.
 
+zh: <i>第八章  模块化开发</i>：带你领略如何通过 AMD 模块和 RequireJS 模块化你的代码。
+
 <i>Chapter 9, Exercise 3: Todos - Your First Modular Backbone + RequireJS App</i> takes you through rewriting the app created in Exercise 1 to be more modular with the help of RequireJS.
+
+zh: <i>第九章  练习三：你的第一个模块化 Backbone + RequireJS 应用——待办事项列表</i>：带你走进重写练习一应用，练习在 RequireJS 帮助下让你的应用模块化。
 
 <i>Chapter 10, Paginating Backbone Requests & Collections</i> walks through how to use the Backbone.Paginator plugin to paginate data for your Collections.
 
+zh: <i>第十章  Backbone 请求和集合的分页</i>：走进如何使用 Backbone.Paginator 插件来将集合数据分页的技术。
+
 <i>Chapter 11, Backbone Boilerplate And Grunt BBB</i> introduces powerful tools you can use to bootstrap a new Backbone.js application with boilerplate code.
+
+zh: <i>第十一章  Backbone 样板和 Grunt BBB</i>：介绍可以通过使用样板代码来生成一个新的 Backbone.js 应用的强大工具。
 
 <i>Chapter 12, Mobile Applications</i> addresses the issues that arise when using Backbone with jQuery Mobile.
 
+zh：<i>第十二章  移动应用</i>：着墨于 Backbone 与 jQuery Mobile 结合所带来的问题。
+
 <i>Chapter 13, Jasmine</i> covers how to unit test Backbone code using the Jasmine test framework.
+
+zh: <i>第十三章  Jasmine</i>：介绍如何用 Jasmine 测试框架来对 Backbone 代码进行单元测试。
 
 <i>Chapter 14, QUnit</i> discusses how to use QUnit for unit testing.
 
+zh: <i>第十四章  QUnit</i>：探讨如何用 QUnit 做单元测试。
+
 <i>Chapter 15, SinonJS</i> discusses how to use SinonJS for unit testing your Backbone apps.
+
+zh: <i>第十五章  SinonJS</i>：探讨如何用 SinonJS 为你的 Backbone 应用做单元测试。
 
 <i>Chapter 16, Resources</i> provides references to additional Backbone-related resources.
 
+zh: <i>第十六章  资源</i>：提供其他与 Backbone 相关资源的参阅方式。
+
 <i>Chapter 17, Conclusions</i> wraps up our tour through the world of Backbone.js development.
 
+zh: <i>第十七章  总结</i>：完成我们的 Backbone.js 开发世界之旅。
+
 <i>Chapter 18, Appendix</i> returns to our design pattern discussion by contrasting MVC with the Model-View-Presenter (MVP) pattern and examines how Backbone.js relates to both. A walkthrough of writing a Backbone-like library from scratch and other topics are also covered.
+
+zh: <i>第十八章  附录</i>：回到我们关于设计模式的讨论——比较 MVC 与 MVP（Model-View-Presenter，模型——视图——展示器）模式，检验 Backbone.js 与二者之间的关系。同时也包括从头开始写类似 Backbone 的库和一些其他主题。
 
 # Fundamentals
 
