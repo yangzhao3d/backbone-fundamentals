@@ -102,7 +102,7 @@ zh: 我假设你的 JavaScript 水平超凡，于是像对象字面值（Object 
 
 Frank Lloyd Wright once said “You can’t make an architect. You can however open the doors and windows toward the light as you see it.” In this book, I hope to shed some light on how to improve the structure of your web applications, opening doors to what will hopefully be more maintainable, readable applications in your future.
 
-zh: 弗兰克·劳埃德·赖特（Frank Lloyd Wright，建筑师）曾经说道：你不能成为一个建筑师，但是你可以打开门窗朝着光知道你看到。”希望这本书能为提高 Web 应用结构给你带来一些启发，为你打开创造更易维护、可读性更强应用的大门。
+zh: 弗兰克·劳埃德·赖特（Frank Lloyd Wright，建筑师）曾经说道：“你不能成为造物主，但是你可以打开门窗，朝向光亮，直到你看到祂。”希望这本书能为提高 Web 应用结构给你带来一些光亮，为你打开创造更易维护、可读性更强应用的大门。
 
 The goal of all architecture is to build something well; in our case, to craft code that is enduring and delights both ourselves and the developers who will maintain our code long after we are gone. We all want our architecture to be simple, yet beautiful.
 
@@ -128,15 +128,23 @@ zh: 在本书中，我将和许多有经验的作者一起为你展现如何使�
 
 A number of modern JavaScript frameworks provide developers an easy path to organizing their code using variations of a pattern known as MVC (Model-View-Controller). MVC separates the concerns in an application into three parts:
 
-* Models represent the domain-specific knowledge and data in an application. Think of this as being a ‘type’ of data you can model — like a User, Photo, or Todo note. Models can notify observers when their state changes.
-* Views typically constitute the user interface in an application (e.g., markup and templates), but don’t have to be. They observe Models, but don’t directly communicate with them.
-* Controllers handle input (e.g., clicks, user actions) and update Models. 
+zh: 当前许多 JavaScript 框架都给开发者一个简单的途径去组织代码，那就是使用被称作 MVC（模型——视图——控制器） 的模式的各种变种。 MVC 把我们对一个应用的关注点分成三个方面：
+
+* Models represent the domain-specific knowledge and data in an application. Think of this as being a ‘type’ of data you can model — like a User, Photo, or Todo note. Models can notify observers when their state changes. |zh: “模型”代表应用中不同领域的知识和数据。把它想象成你可以建模的数据类型—— 就像一个用户、一张照片、或者待办事项笔记。模型可以在发生状态变化时通知监视者。
+* Views typically constitute the user interface in an application (e.g., markup and templates), but don’t have to be. They observe Models, but don’t directly communicate with them. |zh: “视图”一般是应用的用户界面（如标记和模板）的主要构成成分，但不仅限这些。它们监视着模型，但不与模型之间交流。
+* Controllers handle input (e.g., clicks, user actions) and update Models. |zh: “控制器”处理输入（如点击、用户动作）并更新模型。
 
 Thus, in an MVC application, user input is acted upon by Controllers which update Models. Views observe Models and update the user interface when changes occur.
 
+zh: 因此，在一个 MVC 应用中，用户输入作用于控制器，控制器更新模型。视图监控模型，当模型发生变化时更新用户界面。
+
 JavaScript MVC frameworks don’t always strictly follow the above pattern. Some solutions (including Backbone.js) merge the responsibility of the Controller into the View, while other approaches add additional components into the mix.
 
+zh: JavaScript 的 MVC 框架不总是严格遵循上述模式的。许多方案（包括 Backbone.js）将控制器的职责合并到视图中，同时在这个组合中加入了一些其他组件。
+
 For this reason we refer to such frameworks as following the MV* pattern; that is, you’re likely to have a Model and a View, but a distinct Controller might not be present and other components may come into play.
+
+zh: 因此我们将这类框架统称为 MV* 模式，也就是说可能会有模型层和视图层，但一个明显的视图层不会存在，而其他组件则会发挥作用。
 
 ### What is Backbone.js? |zh: Backbone.js 是什么？
 
@@ -144,13 +152,23 @@ For this reason we refer to such frameworks as following the MV* pattern; that i
 
 Backbone.js is a lightweight JavaScript library that adds structure to your client-side code. It makes it easy to manage and decouple concerns in your application, leaving you with code that is more maintainable in the long term.
 
+zh: Backbone.js 是一个轻量级 JavaScript 库，可以让你的客户端代码结构更好。它让你更好的管理和解耦应用中的关注点，使你的代码长期保持更好的可维护性。
+
 Developers commonly use libraries like Backbone.js to create single-page applications (SPAs). SPAs are web applications that load into the browser and then react to data changes on the client side without requiring complete page refreshes from the server.
+
+zh: 开发者主要用 Backbone.js 这样的库创建单页应用（single-page applications，SPA）。这类 Web 应用被加载到浏览器中，在客户端对数据变化做出反应，不需要从服务端获得完整的页面刷新。
 
 Backbone is mature, popular, and has both a vibrant developer community as well as a wealth of plugins and extensions available that build upon it. It has been used to create non-trivial applications by companies such as Disqus, Walmart, SoundCloud and LinkedIn.
 
+zh: Backbone 成熟、流行，既有充满生气的的开发者社区，又有在其之上构建的十分丰富的插件和扩展。它甚至被像 Disqus、沃尔玛、SoundCloud和LinkedIn这样的大公司使用制造出伟大的应用。
+
 Backbone focuses on giving you helpful methods for querying and manipulating your data rather than re-inventing the JavaScript object model. It's a library, rather than a framework, that plays well with others and scales well, from embedded widgets to large-scale applications.
 
+zh: Backbone 致力于提供帮助你查询机操作数据的方法，而不是重新发明 JavaScript 对象模型。他是一个库，而不是一个框架，因此无论是用来做嵌入的小组件或是大型应用，与其他的框架都没有冲突，可扩展性好。
+
 As it's small, there is also less your users have to download on mobile or slower connections. The entire Backbone source can be read and understood in just a few hours.
+
+正因为它小，在移动端或慢速网络连接的情况下，用户需要下载的数据量夜宵。而且你在几个小时内就能读懂 Backbone 的全部源码。
 
 ### When Do I Need A JavaScript MVC Framework? |zh: 我什么时候需要一个 JavaScript MVC 框架？
 
@@ -186,11 +204,11 @@ With a vibrant community of plugin and extension authors, there's a likelihood t
 Having been refined over two and a half years of development, Backbone is a mature library that will continue to offer a minimalist solution for building better web applications. I regularly use it and hope that you find it as useful an addition to your toolbelt as I have.
 
 
-### Setting Expectations |zh: 设定期许
+### Setting Expectations |zh: 期许
 
 The goal of this book is to create an authoritative and centralized repository of information that can help those developing real-world apps with Backbone. If you come across a section or topic which you think could be improved or expanded on, please feel free to submit an issue (or better yet, a pull-request) on the book's [GitHub site](https://github.com/addyosmani/backbone-fundamentals). It won't take long and you'll be helping other developers avoid the problems you ran into.
 
-zh: 这本书的写作目标是提供一个权威的信息汇集之处，切实帮助那些实际使用 Backbone 开发应用的人。如果你发觉某个章节或主题可以改进或扩展，欢迎在本书的[GitHub 站点](https://github.com/addyosmani/backbone-fundamentals)发布问题（issue）。相信用不了多久你就会帮到其他开发者，避免让他们陷入你曾经遇到的问题。
+zh: 这本书的写作目标是提供一个权威的信息汇集之处，切实帮助那些实际使用 Backbone 开发应用的人。如果你发觉某个章节或主题可以改进或扩展，欢迎在本书的 [GitHub 站点](https://github.com/addyosmani/backbone-fundamentals)发布问题（issue）。相信用不了多久你就会帮到其他开发者，避免让他们陷入你曾经遇到的问题。
 
 Topics will include MVC theory and how to build applications using Backbone's Models, Views, Collections, and Routers. I'll also be taking you through advanced topics like modular development with Backbone.js and AMD (via RequireJS), solutions to common problems like nested views, how to solve routing problems with Backbone and jQuery Mobile, and much more.
 
