@@ -64,7 +64,7 @@ zh: Backbone 成熟、流行，既有充满生气的的开发者社区，又有�
 
 Backbone focuses on giving you helpful methods for querying and manipulating your data rather than re-inventing the JavaScript object model. It's a library, rather than a framework, that plays well with others and scales well, from embedded widgets to large-scale applications.
 
-zh: Backbone 致力于提供帮助你查询机操作数据的方法，而不是重新发明 JavaScript 对象模型。他是一个库，而不是一个框架，因此无论是用来做嵌入的小组件或是大型应用，与其他的框架都没有冲突，可扩展性好。
+zh: Backbone 致力于提供帮助你查询、操作数据的有效方法，而不是重新发明 JavaScript 对象模型。他是一个库，而不是一个框架，因此无论是用来做嵌入的小组件或是大型应用，与其他的框架都没有冲突，可扩展性好。
 
 As it's small, there is also less your users have to download on mobile or slower connections. The entire Backbone source can be read and understood in just a few hours.
 
