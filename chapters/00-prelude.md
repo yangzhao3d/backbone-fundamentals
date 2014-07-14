@@ -20,7 +20,7 @@ zh: 虽然在客户端随意写代码也可以跟服务端交流，但是这意�
 
 Thankfully, there are a growing number of JavaScript libraries that can help improve the structure and maintainability of your code, making it easier to build ambitious interfaces without a great deal of effort. [Backbone.js](http://documentcloud.github.com/backbone/) has quickly become one of the most popular open-source solutions to these issues and in this book we will take you through an in-depth walkthrough of it.
 
-zh: 谢天谢地，越来越多的 JavaScript 库可以帮你提高代码的结构和可维护性，同时不用下多少功夫你就能创造出伟大的界面。[Backbone.js](http://documentcloud.github.com/backbone/) 已经成为最流行的开源解决方案方案之一，这本书将带你深入走进它的世界。
+zh: 值得庆幸的是，越来越多的 JavaScript 库可以帮你提高代码的结构和可维护性，同时不用下多少功夫你就能创造出伟大的界面。[Backbone.js](http://documentcloud.github.com/backbone/) 已经成为最流行的开源解决方案方案之一，这本书将带你深入走进它的世界。
 
 Begin with the fundamentals, work your way through the exercises, and learn how to build an application that is both cleanly organized and maintainable. If you are a developer looking to write code that can be more easily read, structured, and extended - this guide can help.
 
