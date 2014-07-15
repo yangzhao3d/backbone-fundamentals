@@ -1,6 +1,8 @@
+\clearpage
+
 ## Prelude |zh: 序章
 
-![](img/logo.jpg)
+![](/img/logo.jpg)
 
 Not so long ago, "data-rich web application" was an oxymoron. Today, these applications are everywhere and you need to know how to build them.
 
@@ -10,7 +12,7 @@ Traditionally, web applications left the heavy-lifting of data to servers that p
 
 zh: 传统 Web 应用将大量数据加工工作交由服务器处理，服务器在页面加载过程中将完整的 HTML 传送给浏览器。客户端 JavaScript 对于提高用户体验作用十分有限。如今这个关系反了过来——客户端应用将原始数据从服务器原样获取，然后按需渲染至浏览器中。
 
-Think of the Ajax shopping cart which doesn't require a refresh on the page when adding an item to your basket. Initially, jQuery became the go-to library for this paradigm. Its nature was to make Ajax requests then update text on the page and so on. However, this pattern with jQuery revealed that we have implicit model data on the client side. With the server no longer being the only place that knows about our item count, it was a hint that there was a natural tension and pull of this evolution. 
+Think of the Ajax shopping cart which doesn't require a refresh on the page when adding an item to your basket. Initially, jQuery became the go-to library for this paradigm. Its nature was to make Ajax requests then update text on the page and so on. However, this pattern with jQuery revealed that we have implicit model data on the client side. With the server no longer being the only place that knows about our item count, it was a hint that there was a natural tension and pull of this evolution.
 
 zh: 试想 Ajax 购物车功能，当你将一件商品加入时不需要刷新页面。最初，使用 jQuery 成为解决这类问题的必由之路。它的本质方式是发起 Ajax 请求，然后更新页面上的文字，等等。然而，这种通过 jQuery 的模式表明我们在客户端隐含了模型数据，服务端不再是唯一了解我们商品数量的地方了。这暗示我们有一股自然张力推动这场进化。
 
@@ -26,7 +28,7 @@ Begin with the fundamentals, work your way through the exercises, and learn how 
 
 zh: 本书将从基础开始，引导你完成各种练习，从而使你学会如何构建组织清晰、可维护性高的应用。如果你是个渴求写出可读性好、组织清晰、可扩展性高的代码的开发者——这本手册能帮上忙的。
 
-Improving developer education is important to me, which is why this book is released under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported [license](http://creativecommons.org/licenses/by-nc-sa/3.0/). This means you can purchase or grab a copy of the book for [free](http://addyosmani.github.com/backbone-fundamentals/) or help to further [improve](https://github.com/addyosmani/backbone-fundamentals/) it. Corrections to existing material are always welcome and I hope that together we can provide the community with an up-to-date resource that is of help. 
+Improving developer education is important to me, which is why this book is released under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported [license](http://creativecommons.org/licenses/by-nc-sa/3.0/). This means you can purchase or grab a copy of the book for [free](http://addyosmani.github.com/backbone-fundamentals/) or help to further [improve](https://github.com/addyosmani/backbone-fundamentals/) it. Corrections to existing material are always welcome and I hope that together we can provide the community with an up-to-date resource that is of help.
 
 zh: 我看重提高开发人员的知识水平，因此我将此书以“署名-非商业性使用-相同方式共享 3.0 未本地化版本 (CC BY-NC-SA 3.0) [协议](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)”发布。这意味着你可以购买，也可以 [免费](http://addyosmani.github.com/backbone-fundamentals/) 获得这本书，甚至帮忙 [改进](https://github.com/addyosmani/backbone-fundamentals/)这本书。欢迎改正本书的当前内容，同时希望我们可以携手努力为开发者社群提供与时俱进的资料，这是很有必要的。
 
@@ -61,7 +63,7 @@ zh: 我还要感谢我亲爱的家人，在我写作本书时，他们给了我�
 
 ## Credits |zh: 工作人员
 
-None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to: 
+None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to:
 
 zh: 若没有社群里其他参与开发的人员和写作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
 

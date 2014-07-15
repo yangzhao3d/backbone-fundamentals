@@ -68,32 +68,51 @@ zh: Backbone 致力于提供帮助你查询、操作数据的有效方法，而�
 
 As it's small, there is also less your users have to download on mobile or slower connections. The entire Backbone source can be read and understood in just a few hours.
 
-正因为它小，在移动端或慢速网络连接的情况下，用户需要下载的数据量夜宵。而且你在几个小时内就能读懂 Backbone 的全部源码。
+zh: 正因为它小，在移动端或慢速网络连接的情况下，用户需要下载的数据量夜宵。而且你在几个小时内就能读懂 Backbone 的全部源码。
 
 ### When Do I Need A JavaScript MVC Framework? |zh: 我什么时候需要一个 JavaScript MVC 框架？
 
 When building a single-page application using JavaScript, whether it involves a complex user interface or is simply trying to reduce the number of HTTP requests required for new Views, you will likely find yourself inventing many of the pieces that make up an MV* framework.
 
+zh: 当你用 JavaScript 构建一个单页应用的时候，不管这个应用有复杂用户界面还是只是为了减少新视图所需的 HTTP 请求数量，你都会发现你自己创造了许多构成 MV* 框架的代码片段。
+
 At the outset, it isn’t terribly difficult to write your own application framework that offers some opinionated way to avoid spaghetti code; however, to say that it is equally as trivial to write something as robust as Backbone would be a grossly incorrect assumption.
+
+zh: 刚开始的时候，固执地写自己的框架是避免意大利面条般的代码的一种方式。这种方式并不困难，然而，认为写个像 Backbone 一样的健壮的框架是一件稀松平常的事情就大错特错了。
 
 There’s a lot more that goes into structuring an application than tying together a DOM manipulation library, templating, and routing. Mature MV* frameworks typically include not only the pieces you would find yourself writing, but also include solutions to problems you’ll find yourself running into later on down the road. This is a time-saver that you shouldn’t underestimate the value of.
 
+zh: 组织应用的库除了要调用组合一个 DOM 操作库、处理模板和处理路由之外，还有许多其他的工作要去做。通常成熟的 MV* 框架不仅包含你想要写的这些代码，还包括你在开发的道路上稍后遇到的问题的解决方案。成熟的库可以为你节约宝贵的时间，不要低估它们。
+
 So, where will you likely need an MV* framework and where won’t you?
+
+zh: 那么，你在哪些地方更需要 MV* 框架？哪些地方不需要呢？
 
 If you’re writing an application where much of the heavy lifting for view rendering and data manipulation will be occurring in the browser, you may find a JavaScript MV* framework useful. Examples of applications that fall into this category are GMail, NewsBlur and the LinkedIn mobile app.
 
+zh: 如果你在写的应用的需要在浏览器里进行视图渲染和数据操作的大量数据加工工作，JavaScript MV* 框架会很有用的。这种应用的例子包括 GMail、NewsBlur 和 LinkedIn 的移动应用。
+
 These types of applications typically download a single payload containing all the scripts, stylesheets, and markup users need for common tasks and then perform a lot of additional behavior in the background. For instance, it’s trivial to switch between reading an email or document to writing one without sending a new page request to the server.
+
+zh: 这些类型的应用通常通过一次性下载部署包，包含所有脚本、样式和用户需要的常见任务标记，然后在后台执行许多附加操作。这样像从阅读邮件、文档界面切换到写界面就不需要向服务器发送页面请求了。
 
 If, however, you’re building an application that still relies on the server for most of the heavy-lifting of page/view rendering and you’re just using a little JavaScript or jQuery to make things more interactive, an MV* framework may be overkill. There certainly are complex Web applications where the partial rendering of views can be coupled with a single-page application effectively, but for everything else, you may find yourself better sticking to a simpler setup.
 
+zh: 如果你构建的应用对于页面/视图的大量加工工作依然大量依赖服务器处理，你只用到一点儿 JavaScript 或 jQuery 来增强交互性，MV* 框架就有点大(jiao)材(wang)小(guo)用(zheng)了。当然，复杂的 Web 应用中视图的部分渲染可以有效结合单页应用的形式。但对于所有其他的情况，你会发现还是简单的搭配更适合。
+
 Maturity in software (framework) development isn't simply about how long a framework has been around. It's about how solid the framework is and more importantly how well it's evolved to fill its role. Has it become more effective at solving common problems? Does it continue to improve as developers build larger and more complex applications with it?
 
+zh: 软件（框架）发展的成熟度不只是简单地由一个框架出现的时长——更是由它的可靠性——所决定，当然更重要的是它在自己的角色上的进化程度：用它解决常见问题更有效吗？在开发者们开发更大更复杂的应用的时候它是否跟着一同进步呢？
 
 ### Why Consider Backbone.js? |zh: 为什么要用 Backbone.js？
 
 Backbone provides a minimal set of data-structuring (Models, Collections) and user interface (Views, URLs) primitives that are helpful when building dynamic applications using JavaScript. It's not opinionated, meaning you have the freedom and flexibility to build the best experience for your web application how you see fit. You can either use the prescribed architecture it offers out of the box or extend it to meet your requirements.
 
+zh: Backbone 对使用 JavaScript 编写动态应用提供了数据结构化（模型、集合）和用户界面（视图、URL）的有用的原语的最小组合。同时它也不武断，也解释说你可以自由灵活地根据你喜爱的方式构建你的 Web 应用最好的方式：你既可以使用它提供的良好架构或根据你的需要扩展它。
+
 The library doesn't focus on widgets or replacing the way you structure objects - it just supplies you with utilities for manipulating and querying data in your application. It also doesn't prescribe a specific template engine - while you are free to use the Micro-templating offered by Underscore.js (one of its dependencies), views can bind to HTML constructed using your templating solution of choice.
+
+这个库并非关注小控件或替代你结构化对象的方式，它只是为你的应用提供操作和查询数据的实用工具。它也没规定必须用哪个模板引擎——你可以选择由 Underscore.js（Backbone.js依赖它）提供的微型模板引擎，视图可以根据你选择的解决方案绑定 HTML。
 
 Looking at the [large](http://backbonejs.org/#examples) number of applications built with Backbone, it's clear that it scales well. Backbone also works quite well with other libraries, meaning you can embed Backbone widgets in an application written with AngularJS, use it with TypeScript, or just use an individual class (like Models) as a data backer for simpler apps.
 
