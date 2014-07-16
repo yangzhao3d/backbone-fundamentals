@@ -1,4 +1,4 @@
-# Resources
+# Resources |zh: 资源
 
 ## Books &amp; Courses
 

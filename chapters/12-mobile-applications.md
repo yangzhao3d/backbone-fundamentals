@@ -1,4 +1,4 @@
-# Backbone & jQuery Mobile
+# Backbone & jQuery Mobile |zh: Backbone 和 jQuery Mobile
 
 ### Mobile app development with jQuery Mobile
 

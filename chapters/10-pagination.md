@@ -1,5 +1,5 @@
 
-# Paginating Backbone.js Requests & Collections
+# Paginating Backbone.js Requests & Collections |zh: Backbone.js 请求和集合的分页
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# Conclusions
+# Conclusions |zh: 总结
 
 I hope that you've found this introduction to Backbone.js of value. What you've hopefully learned is that while building a JavaScript-heavy application using nothing more than a DOM manipulation library (such as jQuery) is certainly a possible feat, it is difficult to build anything non-trivial without any formal structure in place. Your nested pile of jQuery callbacks and DOM elements are unlikely to scale and they can be very difficult to maintain as your application grows.
 

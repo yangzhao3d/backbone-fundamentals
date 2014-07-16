@@ -1,4 +1,4 @@
-# Backbone Basics
+# Backbone Basics |zh: Backbone 基础
 
 In this section, you'll learn the essentials of Backbone's models, views, collections, events, and routers. This isn't by any means a replacement for the official documentation, but it will help you understand many of the core concepts behind Backbone before you start building applications using it.
 

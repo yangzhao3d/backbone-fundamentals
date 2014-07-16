@@ -1,4 +1,4 @@
-# Common Problems & Solutions
+# Common Problems & Solutions |zh: 常见问题和解决方案
 
 In this section, we will review a number of common problems developers often experience once they've started to work on relatively non-trivial projects using Backbone.js, as well as present potential solutions.
 

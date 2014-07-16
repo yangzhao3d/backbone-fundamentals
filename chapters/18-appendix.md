@@ -1,4 +1,4 @@
-# Appendix
+# Appendix |zh: 附录
 
 ## A Simple JavaScript MVC Implementation
 
