@@ -1,7 +1,9 @@
 
+\clearpage
+
 ## Prelude |zh: 序章
 
-![](img/logo.jpg)
+![](/img/logo.jpg)
 
 Not so long ago, "data-rich web application" was an oxymoron. Today, these applications are everywhere and you need to know how to build them.
 
@@ -11,7 +13,7 @@ Traditionally, web applications left the heavy-lifting of data to servers that p
 
 zh: 传统 Web 应用将大量数据加工工作交由服务器处理，服务器在页面加载过程中将完整的 HTML 传送给浏览器。客户端 JavaScript 对于提高用户体验作用十分有限。如今这个关系反了过来——客户端应用将原始数据从服务器原样获取，然后按需渲染至浏览器中。
 
-Think of the Ajax shopping cart which doesn't require a refresh on the page when adding an item to your basket. Initially, jQuery became the go-to library for this paradigm. Its nature was to make Ajax requests then update text on the page and so on. However, this pattern with jQuery revealed that we have implicit model data on the client side. With the server no longer being the only place that knows about our item count, it was a hint that there was a natural tension and pull of this evolution. 
+Think of the Ajax shopping cart which doesn't require a refresh on the page when adding an item to your basket. Initially, jQuery became the go-to library for this paradigm. Its nature was to make Ajax requests then update text on the page and so on. However, this pattern with jQuery revealed that we have implicit model data on the client side. With the server no longer being the only place that knows about our item count, it was a hint that there was a natural tension and pull of this evolution.
 
 zh: 试想 Ajax 购物车功能，当你将一件商品加入时不需要刷新页面。最初，使用 jQuery 成为解决这类问题的必由之路。它的本质方式是发起 Ajax 请求，然后更新页面上的文字，等等。然而，这种通过 jQuery 的模式表明我们在客户端隐含了模型数据，服务端不再是唯一了解我们商品数量的地方了。这暗示我们有一股自然张力推动这场进化。
 
@@ -21,13 +23,13 @@ zh: 虽然在客户端随意写代码也可以跟服务端交流，但是这意�
 
 Thankfully, there are a growing number of JavaScript libraries that can help improve the structure and maintainability of your code, making it easier to build ambitious interfaces without a great deal of effort. [Backbone.js](http://documentcloud.github.com/backbone/) has quickly become one of the most popular open-source solutions to these issues and in this book we will take you through an in-depth walkthrough of it.
 
-zh: 谢天谢地，越来越多的 JavaScript 库可以帮你提高代码的结构和可维护性，同时不用下多少功夫你就能创造出伟大的界面。[Backbone.js](http://documentcloud.github.com/backbone/) 已经成为最流行的开源解决方案方案之一，这本书将带你深入走进它的世界。
+zh: 值得庆幸的是，越来越多的 JavaScript 库可以帮你提高代码的结构和可维护性，同时不用下多少功夫你就能创造出伟大的界面。[Backbone.js](http://documentcloud.github.com/backbone/) 已经成为最流行的开源解决方案方案之一，这本书将带你深入走进它的世界。
 
 Begin with the fundamentals, work your way through the exercises, and learn how to build an application that is both cleanly organized and maintainable. If you are a developer looking to write code that can be more easily read, structured, and extended - this guide can help.
 
 zh: 本书将从基础开始，引导你完成各种练习，从而使你学会如何构建组织清晰、可维护性高的应用。如果你是个渴求写出可读性好、组织清晰、可扩展性高的代码的开发者——这本手册能帮上忙的。
 
-Improving developer education is important to me, which is why this book is released under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported [license](http://creativecommons.org/licenses/by-nc-sa/3.0/). This means you can purchase or grab a copy of the book for [free](http://addyosmani.github.com/backbone-fundamentals/) or help to further [improve](https://github.com/addyosmani/backbone-fundamentals/) it. Corrections to existing material are always welcome and I hope that together we can provide the community with an up-to-date resource that is of help. 
+Improving developer education is important to me, which is why this book is released under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported [license](http://creativecommons.org/licenses/by-nc-sa/3.0/). This means you can purchase or grab a copy of the book for [free](http://addyosmani.github.com/backbone-fundamentals/) or help to further [improve](https://github.com/addyosmani/backbone-fundamentals/) it. Corrections to existing material are always welcome and I hope that together we can provide the community with an up-to-date resource that is of help.
 
 zh: 我看重提高开发人员的知识水平，因此我将此书以“署名-非商业性使用-相同方式共享 3.0 未本地化版本 (CC BY-NC-SA 3.0) [协议](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)”发布。这意味着你可以购买，也可以 [免费](http://addyosmani.github.com/backbone-fundamentals/) 获得这本书，甚至帮忙 [改进](https://github.com/addyosmani/backbone-fundamentals/)这本书。欢迎改正本书的当前内容，同时希望我们可以携手努力为开发者社群提供与时俱进的资料，这是很有必要的。
 
@@ -62,7 +64,7 @@ zh: 我还要感谢我亲爱的家人，在我写作本书时，他们给了我�
 
 ## Credits |zh: 工作人员
 
-None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to: 
+None of this work would have been possible without the time and effort invested by the other developers and authors in the community who helped contribute to it. I would like to extend my thanks to:
 
 zh: 若没有社群里其他参与开发的人员和写作者投入的时间和努力，这项工作不可能完成。我想接着感谢：
 
@@ -164,45 +166,71 @@ zh: Backbone 成熟、流行，既有充满生气的的开发者社区，又有�
 
 Backbone focuses on giving you helpful methods for querying and manipulating your data rather than re-inventing the JavaScript object model. It's a library, rather than a framework, that plays well with others and scales well, from embedded widgets to large-scale applications.
 
-zh: Backbone 致力于提供帮助你查询机操作数据的方法，而不是重新发明 JavaScript 对象模型。他是一个库，而不是一个框架，因此无论是用来做嵌入的小组件或是大型应用，与其他的框架都没有冲突，可扩展性好。
+zh: Backbone 致力于提供帮助你查询、操作数据的有效方法，而不是重新发明 JavaScript 对象模型。他是一个库，而不是一个框架，因此无论是用来做嵌入的小组件或是大型应用，与其他的框架都没有冲突，可扩展性好。
 
 As it's small, there is also less your users have to download on mobile or slower connections. The entire Backbone source can be read and understood in just a few hours.
 
-正因为它小，在移动端或慢速网络连接的情况下，用户需要下载的数据量夜宵。而且你在几个小时内就能读懂 Backbone 的全部源码。
+zh: 正因为它小，在移动端或慢速网络连接的情况下，用户需要下载的数据量夜宵。而且你在几个小时内就能读懂 Backbone 的全部源码。
 
 ### When Do I Need A JavaScript MVC Framework? |zh: 我什么时候需要一个 JavaScript MVC 框架？
 
 When building a single-page application using JavaScript, whether it involves a complex user interface or is simply trying to reduce the number of HTTP requests required for new Views, you will likely find yourself inventing many of the pieces that make up an MV* framework.
 
+zh: 当你用 JavaScript 构建一个单页应用的时候，不管这个应用有复杂用户界面还是只是为了减少新视图所需的 HTTP 请求数量，你都会发现你自己创造了许多构成 MV* 框架的代码片段。
+
 At the outset, it isn’t terribly difficult to write your own application framework that offers some opinionated way to avoid spaghetti code; however, to say that it is equally as trivial to write something as robust as Backbone would be a grossly incorrect assumption.
+
+zh: 刚开始的时候，固执地写自己的框架是避免意大利面条般的代码的一种方式。这种方式并不困难，然而，认为写个像 Backbone 一样的健壮的框架是一件稀松平常的事情就大错特错了。
 
 There’s a lot more that goes into structuring an application than tying together a DOM manipulation library, templating, and routing. Mature MV* frameworks typically include not only the pieces you would find yourself writing, but also include solutions to problems you’ll find yourself running into later on down the road. This is a time-saver that you shouldn’t underestimate the value of.
 
+zh: 组织应用的库除了要调用组合一个 DOM 操作库、处理模板和处理路由之外，还有许多其他的工作要去做。通常成熟的 MV* 框架不仅包含你想要写的这些代码，还包括你在开发的道路上稍后遇到的问题的解决方案。成熟的库可以为你节约宝贵的时间，不要低估它们。
+
 So, where will you likely need an MV* framework and where won’t you?
+
+zh: 那么，你在哪些地方更需要 MV* 框架？哪些地方不需要呢？
 
 If you’re writing an application where much of the heavy lifting for view rendering and data manipulation will be occurring in the browser, you may find a JavaScript MV* framework useful. Examples of applications that fall into this category are GMail, NewsBlur and the LinkedIn mobile app.
 
+zh: 如果你在写的应用的需要在浏览器里进行视图渲染和数据操作的大量数据加工工作，JavaScript MV* 框架会很有用的。这种应用的例子包括 GMail、NewsBlur 和 LinkedIn 的移动应用。
+
 These types of applications typically download a single payload containing all the scripts, stylesheets, and markup users need for common tasks and then perform a lot of additional behavior in the background. For instance, it’s trivial to switch between reading an email or document to writing one without sending a new page request to the server.
+
+zh: 这些类型的应用通常通过一次性下载部署包，包含所有脚本、样式和用户需要的常见任务标记，然后在后台执行许多附加操作。这样像从阅读邮件、文档界面切换到写界面就不需要向服务器发送页面请求了。
 
 If, however, you’re building an application that still relies on the server for most of the heavy-lifting of page/view rendering and you’re just using a little JavaScript or jQuery to make things more interactive, an MV* framework may be overkill. There certainly are complex Web applications where the partial rendering of views can be coupled with a single-page application effectively, but for everything else, you may find yourself better sticking to a simpler setup.
 
+zh: 如果你构建的应用对于页面/视图的大量加工工作依然大量依赖服务器处理，你只用到一点儿 JavaScript 或 jQuery 来增强交互性，MV* 框架就有点大(jiao)材(wang)小(guo)用(zheng)了。当然，复杂的 Web 应用中视图的部分渲染可以有效结合单页应用的形式。但对于所有其他的情况，你会发现还是简单的搭配更适合。
+
 Maturity in software (framework) development isn't simply about how long a framework has been around. It's about how solid the framework is and more importantly how well it's evolved to fill its role. Has it become more effective at solving common problems? Does it continue to improve as developers build larger and more complex applications with it?
 
+zh: 软件（框架）发展的成熟度不只是简单地由一个框架出现的时长——更是由它的可靠性——所决定，当然更重要的是它在自己的角色上的进化程度：用它解决常见问题更有效吗？在开发者们开发更大更复杂的应用的时候它是否跟着一同进步呢？
 
 ### Why Consider Backbone.js? |zh: 为什么要用 Backbone.js？
 
 Backbone provides a minimal set of data-structuring (Models, Collections) and user interface (Views, URLs) primitives that are helpful when building dynamic applications using JavaScript. It's not opinionated, meaning you have the freedom and flexibility to build the best experience for your web application how you see fit. You can either use the prescribed architecture it offers out of the box or extend it to meet your requirements.
 
+zh: Backbone 对使用 JavaScript 编写动态应用提供了数据结构化（模型、集合）和用户界面（视图、URL）的有用的原语的最小组合。同时它也不武断，也解释说你可以自由灵活地根据你喜爱的方式构建你的 Web 应用最好的方式：你既可以使用它提供的良好架构或根据你的需要扩展它。
+
 The library doesn't focus on widgets or replacing the way you structure objects - it just supplies you with utilities for manipulating and querying data in your application. It also doesn't prescribe a specific template engine - while you are free to use the Micro-templating offered by Underscore.js (one of its dependencies), views can bind to HTML constructed using your templating solution of choice.
+
+zh: 这个库并非关注小控件或替代你结构化对象的方式，它只是为你的应用提供操作和查询数据的实用工具。它也没规定必须用哪个模板引擎——你可以选择由 Underscore.js（Backbone.js依赖它）提供的微型模板引擎，视图可以根据你选择的解决方案绑定 HTML。
 
 Looking at the [large](http://backbonejs.org/#examples) number of applications built with Backbone, it's clear that it scales well. Backbone also works quite well with other libraries, meaning you can embed Backbone widgets in an application written with AngularJS, use it with TypeScript, or just use an individual class (like Models) as a data backer for simpler apps.
 
+zh: Backbone 制造的 [大量](http://backbonejs.org/#examples) 应用足以证明它的可伸缩性十分优秀。Backbone 也可以良好地同其他库一起运作，这就是说你可以把用 Backbone 做的小组件嵌入到用 AngularJS 写的应用中，或与 TypeScript 一起使用，或者只用一个单独的类（比如模型）作为一个简单应用的数据后台。
+
 There are no performance drawbacks to using Backbone to structure your application. It avoids run loops, two-way binding, and constant polling of your data structures for updates and tries to keep things simple where possible. That said, should you wish to go against the grain, you can of course implement such things on top of it. Backbone won't stop you.
+
+zh: 用 Backbone 去结构化你的应用不会带来性能问题。因为它避免循环运作、双向绑定，它不断获取数据结构的更新，尽可能保持一切简单。同时，如果你想打破常规也没有问题，你当然可以在 Backbone 基础之上自己实现你所需要的功能，Backbone 不会阻碍你的。
 
 With a vibrant community of plugin and extension authors, there's a likelihood that if you're looking to achieve some behavior Backbone is lacking, a complementary project exists that works well with it. This is made simpler by Backbone offering literate documentation of its source code, allowing anyone an opportunity to easily understand what is going on behind the scenes.
 
+zh: Backbone 有富有生机的社群，由插件和扩展的作者组成，当你寻找 Backbone 缺少的某些东西时，补充它的项目很可能已经存在并且与它配合默契。这多亏了 Backbone 为源代码提供了详尽的的文档。每个人能都可以轻松地了解表面的背后发生了什么。
+
 Having been refined over two and a half years of development, Backbone is a mature library that will continue to offer a minimalist solution for building better web applications. I regularly use it and hope that you find it as useful an addition to your toolbelt as I have.
 
+zh: 经过两年半（截至2014年7月）的开发精炼，Backbone 将以成熟库的姿态，继续为构建更好 Web 应用的提供最小解决方案。我也将定期使用它，也希望你觉得它有用，像我一样把它放到常用工具箱里。
 
 ### Setting Expectations |zh: 期许
 
