@@ -314,7 +314,7 @@ zh: <i>第十七章  总结</i>：完成我们的 Backbone.js 开发世界之旅
 
 zh: <i>第十八章  附录</i>：回到我们关于设计模式的讨论——比较 MVC 与 MVP（Model-View-Presenter，模型——视图——展示器）模式，检验 Backbone.js 与二者之间的关系。同时也包括从头开始写类似 Backbone 的库和一些其他主题。
 
-# Fundamentals
+# Fundamentals |zh: 背景知识
 
 Design patterns are proven solutions to common development problems that can help us improve the organization and structure of our applications. By using patterns, we benefit from the collective experience of skilled developers who have repeatedly solved similar problems.
 
@@ -686,7 +686,7 @@ Code School's course challenge app is built from the ground up using Backbone, t
 ![](img/code-school.png)
 
 
-# Backbone Basics
+# Backbone Basics |zh: Backbone 基础
 
 In this section, you'll learn the essentials of Backbone's models, views, collections, events, and routers. This isn't by any means a replacement for the official documentation, but it will help you understand many of the core concepts behind Backbone before you start building applications using it.
 
@@ -2756,7 +2756,7 @@ Backbone has many operations and options beyond those we have covered here and i
 
 
 
-# Exercise 1: Todos - Your First Backbone.js App
+# Exercise 1: Todos - Your First Backbone.js App |zh: 练习一：你的第一个 Backbone.js 应用——待办事项列表
 
 Now that we've covered fundamentals, let's write our first Backbone.js application. We'll build the Backbone Todo List application exhibited on [TodoMVC.com](http://todomvc.com). Building a Todo List is a great way to learn Backbone’s conventions. It's a relatively simple application, yet technical challenges surrounding binding, persisting model data, routing, and template rendering provide opportunities to illustrate some core Backbone features.
 
@@ -3550,7 +3550,7 @@ We’ve now built our first complete Backbone.js application. The latest version
 
 Later on in the book, we’ll learn how to further modularize this application using RequireJS, swap out our persistence layer to a database back-end, and finally unit test the application with a few different testing frameworks.
 
-# Exercise 2: Book Library - Your First RESTful Backbone.js App
+# Exercise 2: Book Library - Your First RESTful Backbone.js App |zh: 练习二：你的第一个 RESTful Backbone.js 应用——图书馆
 
 While our first application gave us a good taste of how Backbone.js applications are made, most real-world applications will want to communicate with a back-end of some sort. Let's reinforce what we have already learned with another example, but this time we will also create a RESTful API for our application to talk to.
 
@@ -4523,7 +4523,7 @@ Now you should be able to add new books with both a release date and keywords!
 
 In this chapter we made our application persistent by binding it to a server using a REST API. We also looked at some problems that might occur when serializing and deserializing data and their solutions. We looked at the dateFormat and the datepicker jQuery plugins and how to do some more advanced things in our Underscore templates. The code is available [here](https://github.com/addyosmani/backbone-fundamentals/tree/gh-pages/practicals/exercise-2).
 
-# Backbone Extensions
+# Backbone Extensions |zh: Backbone 扩展
 
 Backbone is flexible, simple, and powerful. However, you may find that the complexity of the application you are working on requires more than what it provides out of the box. There are certain concerns which it just doesn't address directly as one of its goals is to be minimalist.
 
@@ -5702,7 +5702,7 @@ To see Thorax in action on a large scale website visit walmart.com on any Androi
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-# Common Problems & Solutions
+# Common Problems & Solutions |zh: 常见问题和解决方案
 
 In this section, we will review a number of common problems developers often experience once they've started to work on relatively non-trivial projects using Backbone.js, as well as present potential solutions.
 
@@ -6757,7 +6757,7 @@ There is one overriding point to make in all of this discussion: semantics. Comm
 If I say “apple”, what am I talking about? Am I talking about a fruit? Or am I talking about a technology and consumer products company? As Sharon Cichelli says: “semantics will continue to be important, until we learn how to communicate in something other than language”.
 
 
-# Modular Development
+# Modular Development |zh: 模块化开发
 
 ## Introduction
 
@@ -7321,7 +7321,7 @@ If you would like to learn more about build profiles, James Burke has a [heavily
 
 
 
-# Exercise 3: Your First Modular Backbone + RequireJS App
+# Exercise 3: Your First Modular Backbone + RequireJS App |zh: 模块化开发
 
 In this chapter, we'll look at our first practical Backbone & RequireJS project - how to build a modular Todo application. Similar to exercise 1, the application will allow us to add new todos, edit new todos and clear todo items that have been marked as completed. For a more advanced practical, see the section on mobile Backbone development.
 
@@ -7806,7 +7806,7 @@ this.$el.html(JST.myTemplate({ collection: this.collection }));
 ```
 
 
-# Paginating Backbone.js Requests & Collections
+# Paginating Backbone.js Requests & Collections |zh: Backbone.js 请求和集合的分页
 
 ## Introduction
 
@@ -8359,7 +8359,7 @@ It's highly configurable, avoiding the need to write your own paging when workin
 
 Additionally, if you have any questions about Backbone.Paginator (or would like to help improve it), feel free to post to the project [issues](https://github.com/addyosmani/backbone.paginator) list.
 
-# Backbone Boilerplate And Grunt-BBB
+# Backbone Boilerplate And Grunt-BBB |zh: Backbone 样板和 Grunt BBB
 
 Boilerplates provide us a starting point for working on projects. They're a base for building upon using the minimum required code to get something functional put together. When you're working on a new Backbone application, a new Model typically only takes a few lines of code to get working.
 
@@ -8954,7 +8954,7 @@ For more about Grunt-BBB, remember to take a look at the official project [repos
 
 
 
-# Backbone & jQuery Mobile
+# Backbone & jQuery Mobile |zh: Backbone 和 jQuery Mobile
 
 ### Mobile app development with jQuery Mobile
 
@@ -9694,7 +9694,7 @@ As you can see, the JavaScript and even the CSS stays the same. The only device-
 ...
 ```
 
-# Unit Testing
+# Unit Testing |zh: 单元测试
 
 One definition of unit testing is the process of taking the smallest piece of testable code in an application, isolating it from the remainder of your codebase, and determining if it behaves exactly as expected.
 
@@ -11633,7 +11633,7 @@ That's it for this section on testing applications with QUnit and SinonJS. I enc
 * **[Another QUnit/Backbone.js demo project](https://github.com/jc00ke/qunit-backbone)**
 * **[SinonJS helpers for Backbone](http://devblog.supportbee.com/2012/02/10/helpers-for-testing-backbone-js-apps-using-jasmine-and-sinon-js/)**
 
-# Resources
+# Resources |zh: 资源
 
 ## Books &amp; Courses
 
@@ -11659,7 +11659,7 @@ That's it for this section on testing applications with QUnit and SinonJS. I enc
 * [Backbone CouchDB](https://github.com/janmonschke/backbone-couchdb)
 * [Backbone Validations - HTML5 inspired validations](https://github.com/n-time/backbone.validations)
 
-# Conclusions
+# Conclusions |zh: 总结
 
 I hope that you've found this introduction to Backbone.js of value. What you've hopefully learned is that while building a JavaScript-heavy application using nothing more than a DOM manipulation library (such as jQuery) is certainly a possible feat, it is difficult to build anything non-trivial without any formal structure in place. Your nested pile of jQuery callbacks and DOM elements are unlikely to scale and they can be very difficult to maintain as your application grows.
 
@@ -11685,7 +11685,7 @@ Backbone is neither difficult to learn nor use, however the time and effort you 
 
 With that, I wish you the very best with your onward journey into the world of Backbone and will leave you with a quote from American writer [Henry Miller](http://en.wikipedia.org/wiki/Henry_Miller) -  “One’s destination is never a place, but a new way of seeing things.” 
 
-# Appendix
+# Appendix |zh: 附录
 
 ## A Simple JavaScript MVC Implementation
 
