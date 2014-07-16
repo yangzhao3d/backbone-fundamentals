@@ -112,16 +112,23 @@ zh: Backbone 对使用 JavaScript 编写动态应用提供了数据结构化（�
 
 The library doesn't focus on widgets or replacing the way you structure objects - it just supplies you with utilities for manipulating and querying data in your application. It also doesn't prescribe a specific template engine - while you are free to use the Micro-templating offered by Underscore.js (one of its dependencies), views can bind to HTML constructed using your templating solution of choice.
 
-这个库并非关注小控件或替代你结构化对象的方式，它只是为你的应用提供操作和查询数据的实用工具。它也没规定必须用哪个模板引擎——你可以选择由 Underscore.js（Backbone.js依赖它）提供的微型模板引擎，视图可以根据你选择的解决方案绑定 HTML。
+zh: 这个库并非关注小控件或替代你结构化对象的方式，它只是为你的应用提供操作和查询数据的实用工具。它也没规定必须用哪个模板引擎——你可以选择由 Underscore.js（Backbone.js依赖它）提供的微型模板引擎，视图可以根据你选择的解决方案绑定 HTML。
 
 Looking at the [large](http://backbonejs.org/#examples) number of applications built with Backbone, it's clear that it scales well. Backbone also works quite well with other libraries, meaning you can embed Backbone widgets in an application written with AngularJS, use it with TypeScript, or just use an individual class (like Models) as a data backer for simpler apps.
 
+zh: Backbone 制造的 [大量](http://backbonejs.org/#examples) 应用足以证明它的可伸缩性十分优秀。Backbone 也可以良好地同其他库一起运作，这就是说你可以把用 Backbone 做的小组件嵌入到用 AngularJS 写的应用中，或与 TypeScript 一起使用，或者只用一个单独的类（比如模型）作为一个简单应用的数据后台。
+
 There are no performance drawbacks to using Backbone to structure your application. It avoids run loops, two-way binding, and constant polling of your data structures for updates and tries to keep things simple where possible. That said, should you wish to go against the grain, you can of course implement such things on top of it. Backbone won't stop you.
+
+zh: 用 Backbone 去结构化你的应用不会带来性能问题。因为它避免循环运作、双向绑定，它不断获取数据结构的更新，尽可能保持一切简单。同时，如果你想打破常规也没有问题，你当然可以在 Backbone 基础之上自己实现你所需要的功能，Backbone 不会阻碍你的。
 
 With a vibrant community of plugin and extension authors, there's a likelihood that if you're looking to achieve some behavior Backbone is lacking, a complementary project exists that works well with it. This is made simpler by Backbone offering literate documentation of its source code, allowing anyone an opportunity to easily understand what is going on behind the scenes.
 
+zh: Backbone 有富有生机的社群，由插件和扩展的作者组成，当你寻找 Backbone 缺少的某些东西时，补充它的项目很可能已经存在并且与它配合默契。这多亏了 Backbone 为源代码提供了详尽的的文档。每个人能都可以轻松地了解表面的背后发生了什么。
+
 Having been refined over two and a half years of development, Backbone is a mature library that will continue to offer a minimalist solution for building better web applications. I regularly use it and hope that you find it as useful an addition to your toolbelt as I have.
 
+zh: 经过两年半（截至2014年7月）的开发精炼，Backbone 将以成熟库的姿态，继续为构建更好 Web 应用的提供最小解决方案。我也将定期使用它，也希望你觉得它有用，像我一样把它放到常用工具箱里。
 
 ### Setting Expectations |zh: 期许
 
